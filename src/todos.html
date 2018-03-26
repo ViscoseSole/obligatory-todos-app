@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Todos</title>
+  <link rel="stylesheet" href="./todos.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.5/lib/draggable.bundle.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="todos-box">
+			<span id="resize"><i class="fas fa-arrow-left fa-3x" data-fa-transform="rotate-0"></i></span>
+		    <input id="input-todo" type="text" placeholder="Enter an activity.." maxlength="45">
+		    <button id="btn-append-todo" onclick='appendTodo()'></button>
+		    <span id="trash"><i class="fas fa-trash-alt fa-3x"></i></span>
+		  </div>
+
+		  <ul id="ul-todos">
+		  </ul>
+	</div>
+
+
+  <script src="./todos.js"></script>
+</body>
+</html>

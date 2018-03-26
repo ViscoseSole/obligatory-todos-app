@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body {
+  background: #2C3A47;
+}
+
+body, input, button, li {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+}
+
+.container {
+  position: relative;
+  width: 40%;
+  height: 80px;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition-duration: 0.2s;
+}
+
+.fa-trash-alt {
+  color: #c0392b;
+  position: absolute;
+  top: 15px;
+  left: 104%;
+  border: 0px;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  color: white;
+  color: #CAD3C8;
+  position: absolute;
+  top: 15px;
+  right: 104%;
+  cursor: pointer;
+}
+
+#todos-box {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  background: #1abc9c;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#todos-box input {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 99%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 25px 25px 5px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#todos-box button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 1%;
+  border-radius: 25px;
+  background: #fff;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+li {
+  width: 100%;
+  background: #fff;
+  font-size: 20px;
+  height: 50px;
+  color: #666;
+  overflow: hidden;
+  float: left;
+  opacity: 0.85;
+  cursor: pointer;
+  padding-top: 10px;
+
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+li:first-child {
+  border-radius: 5px 5px 0px 0px;
+  border-top: 2px;
+}
+li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+li:only-child {
+  border-radius: 5px;
+}
+
+li:hover {
+  transition-duration: 0.2s;
+  opacity: 0.7;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  transform: translateY(25%);
+  margin-right: 20px;
+  margin-left: 15px;
+}
