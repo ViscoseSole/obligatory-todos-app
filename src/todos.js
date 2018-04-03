@@ -3,7 +3,7 @@
 -Drag&Drop
   *todo's onto trash icon to remove
   *change order with other todos
--Copy to clickboard
+-Copy to clipboard 
 */
 
 $( document ).ready(function() {
